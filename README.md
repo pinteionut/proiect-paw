@@ -7,6 +7,7 @@ Tehnologii folosite:
 - Laravel
 - Laravel Websockets
 - React
+- Sass
 
 Pornirea serverului:
 
