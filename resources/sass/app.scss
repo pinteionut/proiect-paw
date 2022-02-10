@@ -1,0 +1,185 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header {
+  background-color: #70A9A1;
+  padding: 10px;
+
+  .title {
+    color: whitesmoke;
+  }
+}
+
+.game-card {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #70A9A1;
+    color: white;
+  }
+}
+
+#game-screen {
+  #big-box {
+    border: 2px solid;
+    width: 604px;
+    height: 604px;
+    position: relative;
+    .node-container {
+      &.middle {
+        left: 284px;
+      }
+      &.center {
+        top: 284px;
+      }
+    }
+  }
+  #box-1 {
+    border: 2px solid;
+    width: 300px;
+    height: 300px;
+    border-left: none;
+    border-top: none;
+    background: white;
+    float: left;
+  }
+  #box-2 {
+    border-bottom: 2px solid;
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin-left: 300px;
+  }
+  #box-3 {
+    border-right: 2px solid;
+    width: 300px;
+    height: 300px;
+    background: white;
+    float: left
+  }
+  #box-4 {
+    width: 300px;
+    height: 300px;
+    border-left: none;
+    border-top: none;
+    background: white;
+    margin-left: 300px;
+  }
+  #medium-box {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    background: white;
+    top: 75px;
+    left: 75px;
+    border: 2px solid;
+    .node-container {
+      &.middle {
+        left: 207px;
+      }
+      &.center {
+        top: 207px;
+      }
+    }
+
+    #box-5 {
+      border: 2px solid;
+      border-top: none;
+      border-left: none;
+      height: 223px;
+      width: 223px;
+      float: left;
+    }
+    #box-6 {
+      border-bottom: 2px solid;
+      height: 223px;
+      width: 223px;
+      float: left;
+    }
+    #box-7 {
+      border-right: 2px solid;
+      border-top: none;
+      border-left: none;
+      height: 223px;
+      width: 223px;
+      float: left;
+    }
+    #box-8 {
+      height: 223px;
+      width: 223px;
+      float: left;
+    }
+    #small-box {
+      border: 2px solid;
+      width: 300px;
+      background: white;
+      height: 300px;
+      position: absolute;
+      left: 65px;
+      top: 65px;
+      .node-container {
+        &.middle {
+          left: 140px;
+        }
+        &.center {
+          top: 140px;
+        }
+      }
+    }
+  }
+  .node-container {
+    position: absolute;
+    &.left {
+      left: -15px;
+    }
+    &.top {
+      top: -15px;
+    }
+    &.right {
+      right: -15px;
+    }
+    &.bottom {
+      bottom: -15px;
+    }
+  }
+}
+
+.node {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: white;
+  &.suggested {
+    box-shadow: 0 0 0 3px #14eecd;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 0 3px #0fbfa6;
+    }
+  }
+}
+
+.menu {
+  .btn {
+    width: 200px;
+  }
+}
